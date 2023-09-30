@@ -7,10 +7,9 @@ using Microsoft.Azure.Storage.Queue;
 string[] messages = new string[] { "First message", "Second message", "Third message" };
 
 // storage account connection string
-string storageConnectionString = "YOUR_STORAGE_CONNECTION_STRING";
+string storageConnectionString = "DefaultEndpointsProtocol=https;AccountName=st10147510rg9b42;AccountKey=9D1hUKwhYx8iBpSx+yKyjYNwwWCSP2eNVQ1zzzxY45zA/lpo14CIVXhOs8RkegaaqpPtlB5pzrYL+AStZt2XlQ==;EndpointSuffix=core.windows.net";
 // storage queue name
-string queueName = "YOUR_QUEUE_NAME";
-
+string queueName = "st10147510-storage-queue";
 
 // Create a CloudStorageAccount object from the connection string
 CloudStorageAccount storageAccount = CloudStorageAccount.Parse(storageConnectionString);

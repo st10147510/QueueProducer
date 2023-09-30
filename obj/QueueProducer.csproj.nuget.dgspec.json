@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/tebogo.moloi/Documents/Projects/personal/QueueProducer/QueueProducer.csproj": {}
+  },
+  "projects": {
+    "/Users/tebogo.moloi/Documents/Projects/personal/QueueProducer/QueueProducer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/tebogo.moloi/Documents/Projects/personal/QueueProducer/QueueProducer.csproj",
+        "projectName": "QueueProducer",
+        "projectPath": "/Users/tebogo.moloi/Documents/Projects/personal/QueueProducer/QueueProducer.csproj",
+        "packagesPath": "/Users/tebogo.moloi/.nuget/packages/",
+        "outputPath": "/Users/tebogo.moloi/Documents/Projects/personal/QueueProducer/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/tebogo.moloi/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.Azure.Storage.Queue": {
+              "target": "Package",
+              "version": "[11.1.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.308/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

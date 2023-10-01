@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq.Expressions;
 using Microsoft.Azure.Storage;
 using Microsoft.Azure.Storage.Queue;
 
@@ -6,10 +7,10 @@ using Microsoft.Azure.Storage.Queue;
 // array of string to store the message
 string[] messages = new string[] { "First message", "Second message", "Third message" };
 
-// storage account connection string
-string storageConnectionString = "DefaultEndpointsProtocol=https;AccountName=st10147510rg9b42;AccountKey=9D1hUKwhYx8iBpSx+yKyjYNwwWCSP2eNVQ1zzzxY45zA/lpo14CIVXhOs8RkegaaqpPtlB5pzrYL+AStZt2XlQ==;EndpointSuffix=core.windows.net";
-// storage queue name
-string queueName = "st10147510-storage-queue";
+// stiorage account connection string
+string storageConnectionString = "YOUR_STORAGE_CONNECTION_STRING";
+// stiorage queue name
+string queueName = "YOUR_QUEUE_NAME";
 
 // Create a CloudStorageAccount object from the connection string
 CloudStorageAccount storageAccount = CloudStorageAccount.Parse(storageConnectionString);
@@ -31,3 +32,14 @@ foreach (string message in messages)
     queue.AddMessage(queueMessage);
     Console.WriteLine($"Message '{message}' added to the queue '{queueName}'.");
 }
+
+// stiorage queue message content
+string messageContent = "Hello, Varcity College Students!";
+
+
+
+// Create a message and add it to the queue
+CloudQueueMessage message = new CloudQueueMessage(messageContent);
+queue.AddMessage(message);
+
+Console.WriteLine($"Message '{messageContent}' added to the queue '{queueName}'.");

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq.Expressions;
 using Microsoft.Azure.Storage;
 using Microsoft.Azure.Storage.Queue;
 
@@ -32,14 +31,3 @@ foreach (string message in messages)
     queue.AddMessage(queueMessage);
     Console.WriteLine($"Message '{message}' added to the queue '{queueName}'.");
 }
-
-// stiorage queue message content
-string messageContent = "Hello, Varcity College Students!";
-
-
-
-// Create a message and add it to the queue
-CloudQueueMessage message = new CloudQueueMessage(messageContent);
-queue.AddMessage(message);
-
-Console.WriteLine($"Message '{messageContent}' added to the queue '{queueName}'.");
